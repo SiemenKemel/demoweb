@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabellen</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tabellen.css">
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Start</a></li>
+                <li><a href="./handigeLinks.html">Handige links</a></li>
+                <li><a href="./hyperlinks/basisLinken.html">Basis linken</a></li>
+                <li><a href="./hyperlinks/superLangePagina.html">Superlangepagina</a></li>
+                <li><a href="./lijsten.html">Lijsten</a></li>
+                <li><a href="./selectors.html">Selectors</a></li>
+                <li><a href="./afbeeldingen.html">Afbeeldingen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Tabellen</h1>
+
+        <div class="content-border">
+            <h2>Voorbeeld 1</h2>
+            <table>
+                <tr><th>Voornaam</th><th>Naam</th></tr>
+                <tr><td>Tibo</td><td>VC</td></tr>
+            </table>
+        </div>
+        
+        <div class="content-border">
+            <h2>Voorbeeld 2</h2>
+            <table class="voorbeeld2">
+                <caption>Een tabel met namen</caption>
+                <tr><th>Voornaam</th><th>Naam</th></tr>
+                <tr><td>Tibo</td><td>VC</td></tr>
+            </table>
+        </div>
+        <div class="clear"></div>
+
+        <div class="content-border">
+            <h2>Rijen groeperen</h2>
+            <table class="voorbeeld3">
+                <caption>Een tabel met namen</caption>
+                <thead>
+                    <tr><th>Voornaam</th><th>Naam</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Tibo</td><td>VC</td></tr>
+                </tbody>
+                <tfoot>
+                    <!-- Bv aantal namen -->
+                    <tr><td>1</td><td>1</td></tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="clear"></div>
+
+        <h2>Groeperen</h2>
+        <div class="content-border">
+            <h3>Colgroup</h3>
+            <table class="">
+                <caption>Een tabel</caption>
+                <thead>
+                    <colgroup>
+                        <col span="2" class="table-colgroup">
+                        <col>
+                    </colgroup>
+                    <tr>
+                        <th>Kolom 1</th>
+                        <th>Kolom 1</th>
+                        <th>Kolom 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-border">
+            <h3>Colspan</h3>
+            <table class="">
+                <caption>Een tabel</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="table-colgroup">Kolom 1</th>
+                        <th>Kolom 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="content-border">
+            <h3>Colspan</h3>
+            <table class="">
+                <caption>Een tabel</caption>
+                <thead>
+                    <tr>
+                        <th>Kolom 1</th>
+                        <th>Kolom 2</th>
+                        <th>Kolom 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td colspan="2" class="table-colgroup">Cel 1</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content-border">
+            <h3>Rowspan</h3>
+            <table class="table-border">
+                <caption>Een tabel</caption>
+                <thead>
+                    <tr>
+                        <th>Kolom 1</th>
+                        <th>Kolom 2</th>
+                        <th>Kolom 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td rowspan="2" class="table-colgroup">Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                    <tr><td>Cel 1</td><td>Cel 2</td><td>Cel 3</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
